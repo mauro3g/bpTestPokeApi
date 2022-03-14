@@ -49,7 +49,7 @@ const SearchBox = (props: Props) => {
     const { searchValue, changeSearchValue, handleOpenForm } = props
 
     return (
-        <div style={style.navbar}>
+        <div style={style.navbar} data-testid="search-component">
             <h4>PokeDex</h4>
             <div>
                 <form onSubmit={(e) => e.preventDefault()}>

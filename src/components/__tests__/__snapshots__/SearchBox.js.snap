@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshop 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#424242",
+      "color": "white",
+      "display": "flex",
+      "flexGrow": 1,
+      "height": "5vh",
+      "justifyContent": "space-around",
+      "padding": "20px 16px",
+      "width": "100vw",
+    }
+  }
+>
+  <h4>
+    PokeDex
+  </h4>
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        name="search"
+        onChange={[Function]}
+        placeholder="Buscar..."
+        style={
+          Object {
+            "fontSize": "1rem",
+            "height": "3vh",
+            "width": "20vw",
+          }
+        }
+        type="text"
+        value="poke1"
+      />
+      <button
+        style={
+          Object {
+            "height": "4vh",
+            "margin": "0px",
+            "width": "4vh",
+          }
+        }
+        type="submit"
+      >
+        <i
+          className="fa fa-search"
+        />
+      </button>
+    </form>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#8F8F8F",
+        "border": "1px solid #fff",
+        "borderRadius": "5%",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "1rem",
+        "fontWeight": "bold",
+        "padding": "7px 15px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <i
+      className="fa fa-plus-circle"
+    />
+      Agregar
+  </button>
+</div>
+`;

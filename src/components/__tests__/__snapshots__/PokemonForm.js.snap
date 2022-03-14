@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshop 1`] = `
+<div
+  id="myModal"
+  style={
+    Object {
+      "backgroundColor": "rgba(0,0,0,0.4)",
+      "height": "100%",
+      "left": 0,
+      "overflow": "auto",
+      "paddingTop": "100px",
+      "position": "fixed",
+      "top": 0,
+      "width": "100%",
+      "zIndex": 1,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#fefefe",
+        "border": "1px solid #888",
+        "margin": "auto",
+        "padding": "20px",
+        "width": "80%",
+      }
+    }
+  >
+    <span
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#aaaaaa",
+          "cursor": "pointer",
+          "float": "right",
+          "fontSize": "28px",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      ×
+    </span>
+    <form
+      data-testid="form-component"
+      onSubmit={[Function]}
+    >
+      <h4>
+        Editar Pokemon
+      </h4>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "margin": "15px",
+            }
+          }
+        >
+          <label
+            htmlFor="fname"
+          >
+            Nombre
+             :  
+          </label>
+          <input
+            id="fname"
+            name="fname"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value="Pikachu"
+          />
+          <br />
+          <label
+            htmlFor="fimage"
+          >
+            Url
+             : 
+          </label>
+          <input
+            id="fimage"
+            name="fimage"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
+          />
+          <br />
+          <label
+            htmlFor="ftype"
+          >
+            Tipo
+             
+          </label>
+          <select
+            id="ftype"
+            name="ftype"
+            onChange={[Function]}
+            value="fire"
+          >
+            <option
+              value="fire"
+            >
+              fire
+            </option>
+            <option
+              value="water"
+            >
+              water
+            </option>
+            <option
+              value="normal"
+            >
+              normal
+            </option>
+            <option
+              value="bug"
+            >
+              bug
+            </option>
+            <option
+              value="poison"
+            >
+              poison
+            </option>
+          </select>
+        </div>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "margin": "15px",
+            }
+          }
+        >
+          <label
+            htmlFor="fhp"
+          >
+            Hp
+             : 
+            50
+          </label>
+          <input
+            id="fhp"
+            max="100"
+            min="1"
+            name="fhp"
+            onChange={[Function]}
+            required={true}
+            style={
+              Object {
+                "marginBottom": "20px",
+              }
+            }
+            type="range"
+            value={50}
+          />
+          <label
+            htmlFor="fattack"
+          >
+            Ataque
+             : 
+            50
+          </label>
+          <input
+            id="fattack"
+            max="100"
+            min="1"
+            name="fattack"
+            onChange={[Function]}
+            required={true}
+            style={
+              Object {
+                "marginBottom": "20px",
+              }
+            }
+            type="range"
+            value={50}
+          />
+          <label
+            htmlFor="fdefense"
+          >
+            Defensa
+             : 
+            50
+          </label>
+          <input
+            id="fdefense"
+            max="100"
+            min="1"
+            name="fdefense"
+            onChange={[Function]}
+            required={true}
+            type="range"
+            value={50}
+          />
+        </div>
+      </div>
+      <button
+        data-testid="button-component"
+        style={
+          Object {
+            "backgroundColor": "#008CBA",
+            "border": "2px solid #008CBA",
+            "borderRadius": "5%",
+            "color": "white",
+            "cursor": "pointer",
+            "fontSize": "1rem",
+            "margin": "2px 2px",
+            "padding": "10px 32px",
+            "textAlign": "center",
+          }
+        }
+        type="submit"
+      >
+        Editar
+      </button>
+    </form>
+  </div>
+</div>
+`;

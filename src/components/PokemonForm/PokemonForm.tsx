@@ -77,7 +77,7 @@ const PokemonForm = (props: Props) => {
 
     const handleSubmit = async () => {
         const newPokemon: IPokemon = defaultPokemon
-        if(edit){
+        if (edit) {
             newPokemon.id = pokemon?.id as number
         }
         newPokemon.name = pokemonValues[FIELDS.name.key]
@@ -99,18 +99,18 @@ const PokemonForm = (props: Props) => {
         <div id="myModal" style={style.modal}>
             <div style={style.modalContent} >
                 <span style={style.close} onClick={() => handleCloseForm()}>&times;</span>
-                <form onSubmit={(e) => { e.preventDefault(); handleSubmit() }}>
+                <form data-testid="form-component" onSubmit={(e) => { e.preventDefault(); handleSubmit() }}>
                     <h4>{edit ? 'Editar Pokemon' : 'Crear Pokemon'}</h4>
                     <div style={style.formContent} >
                         <div style={style.inputContainer}>
                             <label style={style.label} htmlFor="fname">{FIELDS.name.name} :  </label>
-                            <input required type="text" id="fname" value={pokemonValues[FIELDS.name.key]} onChange={(e) => handleChange(FIELDS.name.key, e.target.value)}></input><br />
+                            <input required type="text" id="fname" name="fname" value={pokemonValues[FIELDS.name.key]} onChange={(e) => handleChange(FIELDS.name.key, e.target.value)}></input><br />
                             <label style={style.label} htmlFor="fimage">{FIELDS.image.name} : </label>
                             <input required type="text" id="fimage" name="fimage" value={pokemonValues[FIELDS.image.key]} onChange={(e) => handleChange(FIELDS.image.key, e.target.value)}></input><br></br>
                             <label htmlFor="ftype">{FIELDS.type.name} </label>
                             <select name="ftype" id="ftype" value={pokemonValues[FIELDS.type.key]} onChange={(e) => handleChange(FIELDS.type.key, e.target.value)}>
                                 {
-                                    TYPES.map((type) => <option value={type}>{type}</option>)
+                                    TYPES.map((type) => <option value={type} key={type}>{type}</option>)
                                 }
                             </select>
 
@@ -118,10 +118,10 @@ const PokemonForm = (props: Props) => {
                         <div style={style.inputContainer}>
                             <label style={style.label} htmlFor="fhp">{FIELDS.hp.name} : {pokemonValues[FIELDS.hp.key]}</label>
                             <input style={style.inputMargin} required type="range" min="1" max="100" id="fhp" name="fhp" value={pokemonValues[FIELDS.hp.key]} onChange={(e) => handleChange(FIELDS.hp.key, parseInt(e.target.value))}></input>
-                            <label style={style.label} htmlFor="fhp">{FIELDS.attack.name} : {pokemonValues[FIELDS.attack.key]}</label>
-                            <input style={style.inputMargin} required type="range" min="1" max="100" id="fhp" name="fhp" value={pokemonValues[FIELDS.attack.key]} onChange={(e) => handleChange(FIELDS.attack.key, parseInt(e.target.value))}></input>
-                            <label style={style.label} htmlFor="fhp">{FIELDS.defense.name} : {pokemonValues[FIELDS.defense.key]}</label>
-                            <input required type="range" min="1" max="100" id="fhp" name="fhp" value={pokemonValues[FIELDS.defense.key]} onChange={(e) => handleChange(FIELDS.defense.key, parseInt(e.target.value))}></input>
+                            <label style={style.label} htmlFor="fattack">{FIELDS.attack.name} : {pokemonValues[FIELDS.attack.key]}</label>
+                            <input style={style.inputMargin} required type="range" min="1" max="100" id="fattack" name="fattack" value={pokemonValues[FIELDS.attack.key]} onChange={(e) => handleChange(FIELDS.attack.key, parseInt(e.target.value))}></input>
+                            <label style={style.label} htmlFor="fdefense">{FIELDS.defense.name} : {pokemonValues[FIELDS.defense.key]}</label>
+                            <input required type="range" min="1" max="100" id="fdefense" name="fdefense" value={pokemonValues[FIELDS.defense.key]} onChange={(e) => handleChange(FIELDS.defense.key, parseInt(e.target.value))}></input>
                         </div>
                     </div>
                     <Button type="submit" label={edit ? "Editar" : "Crear"}></Button>

@@ -14,7 +14,7 @@ const defaultPokemon = {
 }
 
 
-test('should render a button component', () => {
+test('should render a card component', () => {
     render(<PokemonCard pokemon={defaultPokemon} index={0} handleOpenForm={()=>{}} handleDeletePokemon={()=>{}}></PokemonCard>)
     const element = screen.getByTestId('card-component')
     expect(element).toBeInTheDocument()
@@ -22,7 +22,7 @@ test('should render a button component', () => {
 })
 
 test('match snapshop', ()=>{
-    const testBtn = renderer.create(<PokemonCard pokemon={defaultPokemon} index={0} handleOpenForm={()=>{}} handleDeletePokemon={()=>{}}></PokemonCard>).toJSON()
-    expect(testBtn).toMatchSnapshot()
+    const test = renderer.create(<PokemonCard pokemon={defaultPokemon} index={0} handleOpenForm={()=>{}} handleDeletePokemon={()=>{}}></PokemonCard>).toJSON()
+    expect(test).toMatchSnapshot()
 })
 
