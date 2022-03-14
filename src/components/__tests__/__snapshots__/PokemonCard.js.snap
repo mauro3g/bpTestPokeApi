@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshop 1`] = `
+<div
+  data-testid="card-component"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#424242",
+      "color": "white",
+      "display": "flex",
+      "fontSize": "2rem",
+      "height": "18vh",
+      "margin": "10px",
+      "padding": "10px 10px",
+      "textAlign": "center",
+      "width": "21vw",
+    }
+  }
+>
+  <div>
+    <img
+      alt="pokemon"
+      src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": "50%",
+          "height": "70px",
+          "marginLeft": "10px",
+          "width": "70px",
+        }
+      }
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "flexGrow": "1",
+        "fontSize": "1rem",
+        "height": "90%",
+        "marginLeft": "15px",
+      }
+    }
+  >
+    <p>
+      Pikachu
+    </p>
+    <div>
+      fire
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "padding": "0px",
+        }
+      }
+    >
+      <p>
+        Atk: 
+        50
+         
+      </p>
+      <p>
+        Def: 
+        50
+         
+      </p>
+      <p>
+        Hp: 
+        50
+         
+      </p>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "80%",
+        "justifyContent": "space-around",
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": "50%",
+          "fontSize": "1.2rem",
+          "height": "35px",
+          "margin": "0px 10px",
+          "width": "35px",
+        }
+      }
+      type="button"
+    >
+      <i
+        className="fa fa-pencil"
+      />
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": "50%",
+          "fontSize": "1.2rem",
+          "height": "35px",
+          "margin": "0px 10px",
+          "width": "35px",
+        }
+      }
+      type="button"
+    >
+      <i
+        className="fa fa-times-circle-o"
+      />
+    </button>
+  </div>
+</div>
+`;

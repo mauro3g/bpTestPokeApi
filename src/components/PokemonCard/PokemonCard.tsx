@@ -64,7 +64,7 @@ const PokemonCard = (props: Props) => {
     }
 
     return (
-        <div style={style.card}>
+        <div style={style.card} data-testid="card-component">
             <div >
                 <img style={style.image} src={pokemon.image} alt='pokemon'></img>
             </div>

@@ -22,7 +22,7 @@ interface Props {
 const Button = (props: Props) => {
     const { type, label } = props
     return (
-        <button style={style.button} type={type}>{label}</button>
+        <button style={style.button} type={type} data-testid="button-component">{label}</button>
     )
 }
 

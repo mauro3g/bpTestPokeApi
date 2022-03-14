@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshop 1`] = `
+<button
+  data-testid="button-component"
+  style={
+    Object {
+      "backgroundColor": "#008CBA",
+      "border": "2px solid #008CBA",
+      "borderRadius": "5%",
+      "color": "white",
+      "cursor": "pointer",
+      "fontSize": "1rem",
+      "margin": "2px 2px",
+      "padding": "10px 32px",
+      "textAlign": "center",
+    }
+  }
+  type="submit"
+>
+  testbtn
+</button>
+`;
